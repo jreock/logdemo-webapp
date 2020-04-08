@@ -1,0 +1,24 @@
+{
+  "name": "logdemo-webapp",
+  "version": "1.0.0",
+  "description": "Demo Application for FluentD vs. Logstash Webinar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jreock/logdemo-webapp.git"
+  },
+  "author": "Justin Reock",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jreock/logdemo-webapp/issues"
+  },
+  "homepage": "https://github.com/jreock/logdemo-webapp#readme",
+  "dependencies": {
+    "express": "4.17.1",
+    "pg": "8.0.0",
+    "winston": "3.2.1"
+  }
+}
