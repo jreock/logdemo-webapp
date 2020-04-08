@@ -11,7 +11,13 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/index.js"
+            "program": "${workspaceFolder}/index.js",
+            "env": {
+                "PGUSER": "postgres",
+                "PGHOST": "localhost",
+                "PGDATABASE": "logdemo",
+                "PGPORT": 5432
+            },
         }
     ]
 }
