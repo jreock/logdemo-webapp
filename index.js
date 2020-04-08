@@ -44,4 +44,4 @@ function procRequest (req, res) {
 
 app.get('/', (req, res) => procRequest(req, res));
 
-app.listen(port, () => logger.info(`Example app listening at http://localhost:${port}`))
+app.listen(port, () => logger.info(`Logdemo listening at http://localhost:${port}`))
