@@ -35,10 +35,14 @@ const logger = createLogger({
 });
 
 function procRequest (req, res) {
-
-  res.send("Hello World from a function!");
-  // TODO -- pick a random op and execute it
-  dbutils.dbOp("insert",logger,"blah");
+  var key = Math.floor(Math.random() * Math.floor(10000));
+  var select = (Math.floor(Math.random() * Math.floor(3)));
+  res.send(`Selected option ${select} against key ${key}`);
+  switch (select) {      
+    case 0 : dbutils.dbOp("insert",logger,key);
+    case 1 : dbutils.dbOp("delete",logger,key);
+    case 2 : dbutils.dbOp("select",logger,key);
+  }
 
 }
 
