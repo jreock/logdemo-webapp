@@ -1,0 +1,12 @@
+[Unit]
+Description=FluentD vs Logstash Webinar Demo Application
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/logdemo/Node/logdemo-webapp
+ExecStart=/home/logdemo/Node/logdemo-webapp/run-demo.sh
+PIDFile=/tmp/logdemo-worker.pid
+
+[Install]
+WantedBy=default.target
