@@ -1,6 +1,6 @@
 -- Table: public.logdemo
 
--- DROP TABLE public.logdemo;
+CREATE SEQUENCE logdemo_key_seq INCREMENT BY 1 MINVALUE 1 NO MAXVALUE;
 
 CREATE TABLE public.logdemo
 (
